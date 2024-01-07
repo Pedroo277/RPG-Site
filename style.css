@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Architects Daughter', cursive;
+	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Mulish', sans-serif;
+	src: url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo+Black&family=Mulish:wght@500&display=swap');
+}
+
+.elemento {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(download\ \(7\).jpeg);
+	background-size: cover;
+	color: white;
+	text-align: center;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;	
+		bottom: 0px;
+		left: 0;
+		background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.829), transparent);
+		z-index: 1;
+	}
+}
+
+.titulo {
+	font-size: 3em;
+	padding: 30px;
+}
+
+.texto {
+	padding-left: 200px;
+	padding-right: 200px;
+	font-size: 1.5em;
+}
+
+.subtitulo {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+
+.projetos img {
+	width: 400px;
+	z-index: 2;
+	position: relative;
+	margin-top: 80px;
+}	
+
+.projetos img:hover {
+transition: 0.5s;
+width: 410px;
+border-radius: 50%;
+}
